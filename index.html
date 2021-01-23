@@ -1,71 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css" />
+<link rel="stylesheet" href="/css/style.css" />
 <title>Bootstrap4 Portfolio</title>
-<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css" />
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
+    /><!-- SELECT-PICKER -->
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>
+      var __adobewebfontsappname__ = 'dreamweaver';
+    </script>
+<script
+      src="http://use.edgefonts.net/open-sans-condensed:n3:default.js"
+      type="text/javascript"
+    ></script>
 </head>
 <body>
 <!-- START OF NAV -->
-<nav class="navbar fixed-top navbar-expand-md navbar-light bg-dark">
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
   <a class="navbar-brand" href="#"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+  <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#nav"
+        aria-controls="nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
   <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse justify-content-between" id="nav">
-    <ul class="navbar-nav mr-auto">
+  <div
+        class="collapse navbar-collapse justify-content-between mr-auto"
+        id="nav"
+      >
+    <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="fas fa-child text-warning fa-2x"></i>
-        <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#"
+              ><i class="fas fa-laptop-code text-success fa-2x"></i
+              ><span class="text-success logo-bl"></span>
+        <span class="sr-only">(current)</span></a
+            >
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light text-uppercase font-weight-bold px-3" href="#">Home</a>
+        <a
+              class="nav-link text-light text-uppercase font-weight-bold px-3 bl-link"
+              href="#"
+              >Home</a
+            >
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light text-uppercase font-weight-bold px-3" href="#">Skills</a>
+        <a
+              class="nav-link text-light text-uppercase font-weight-bold px-3 bl-link"
+              href="#"
+              >Skills</a
+            >
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link text-light text-uppercase font-weight-bold px-3 dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+        <a
+              class="nav-link text-light text-uppercase font-weight-bold px-3 bl-link"
+              href="#"
+              >Projects</a
+            >
       </li>
-      <a class="nav-link text-light text-uppercase font-weight-bold px-3" href="#">Team</a>
-      <a class="nav-link text-light text-uppercase font-weight-bold px-3" href="#">contact</a>
+      <a
+            class="nav-link text-light text-uppercase font-weight-bold px-3 bl-link"
+            href="#"
+            >Team</a
+          >
+      <a
+            class="nav-link text-light text-uppercase font-weight-bold px-3 bl-link"
+            href="#"
+            >contact</a
+          >
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control input-group mr-sm-1" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-    </form>
+    <!-- COMBOBOX -->
+    <div class="dropdown show">
+      <div class="search_select_box">
+        <select
+              data-live-search="true"
+              class="w-100 btn btn-outline-dark selectpicker"
+            >
+          <option>Looking For Examples?</option>
+          <option>Vaca Photo Studio Website</option>
+          <option>Vaca Friday Night Muscle Cars</option>
+          <option>Napa Famous Winery</option>
+          <option>Destination Cafe</option>
+        </select>
+      </div>
+    </div>
+    <!-- END COMBOBOX -->
   </div>
 </nav>
+
 <!-- END OF NAV -->
 <!-- START BANNER -->
 <div class="container-fluid">
-  <div class="row bg-info justify-content-center align-items-center" style="height: 100vh">
+  <div
+        class="row bg-info justify-content-center align-items-center"
+        style="height: 100vh"
+      >
     <div class="col-sm-10 text-center">
       <h1 class="display-2 text-capitalize">
         <span class="text-warning">pure bootstrap</span>
         <span class="text-white font-weight-bold">website</span>
       </h1>
-      <h2 class="font-weight-light font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-      <a href="#" title="Press Here"><button type="button" class="btn btn-warning btn-lg px-4 m-3">Press Here</button></a>
-      <a href="#" title="Press"><button type="button" class="btn btn-danger btn-lg px-4 m-3">Press Here</button></a>
+      <h2 class="font-weight-light font-italic"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h2>
+      <a href="#" title="Press Here">
+      <button type="button" class="btn btn-warning btn-lg px-4 m-3"> Press Here </button>
+      </a>
+      <a href="#" title="Press">
+      <button type="button" class="btn btn-danger btn-lg px-4 m-3"> Press Here </button>
+      </a>
     </div>
   </div>
 </div>
 <!-- END OF BANNER -->
-    
-    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>
-    
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<!--<script type="text/javascript" src="js/script.js"></script>-->
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.4.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+<!-- for select-picker -->
 </body>
 </html>
